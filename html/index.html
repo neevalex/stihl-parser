@@ -1,0 +1,88 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link href="//cdn.rawgit.com/noelboss/featherlight/1.7.13/release/featherlight.min.css" type="text/css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+</head>
+
+<body>
+    
+    <div class="container">
+     <div class="row">
+        <div class="col-md-12 center">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/3/38/Stihl_Logo_WhiteOnOrange.svg" class="logo" />
+        </div>
+     </div>
+    </div>
+    
+    <div class="container">
+        <!-- Example row of columns -->
+        <div class="row">
+            <div class="col-md-12">
+                <h4>Source URL's</h4>
+                <textarea id="urls" class="urls md-textarea form-control">Loading...</textarea>
+                <a href="#" class="save urls" title="Save">Save</a> <a href="#" class="save scan">Scan For Products</a>
+            </div>
+        </div>
+        <hr>
+    </div> <!-- /container -->
+    
+    <div class="container">
+            <!-- Example row of columns -->
+            <div class="row">
+                <div class="col-md-12">
+                    <h4>Products</h4>
+                  
+                    
+                    <table class="table table-hover table-dark table-responsive products">
+                            <thead>
+                              <tr>
+                                <th scope="col">ID#</th>
+                                <th scope="col">Title</th>
+                                <th scope="col">IMG</th>
+                                <th scope="col">SmallDesc</th>
+                                <th scope="col">Category</th>
+                                <th scope="col">Price</th>
+                                <th scope="col">SKU</th>
+                                <th scope="col">Description</th>
+                                <th scope="col">Related</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr class="loading">
+                                <th scope="row">1</th>
+                                <td>Loading</td>
+                              </tr>
+                            </tbody>
+                     </table>
+                    
+                    
+                    
+                    <a href="#" class="save moredata">Get More Data</a> <a href="#" class="save remove">Remove All</a> <a href="/api/?cmd=export" class="save export">Export .csv</a>
+                </div>
+            </div>
+            <hr>
+        </div> <!-- /container -->
+    
+    
+    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>
+    window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')
+    </script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="//cdn.rawgit.com/noelboss/featherlight/1.7.13/release/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/plugins.js"></script>
+</body>
+
+</html>
